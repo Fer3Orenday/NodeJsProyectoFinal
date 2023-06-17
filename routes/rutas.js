@@ -40,7 +40,7 @@ router.post(
       //En esta parte se manda el contenido del correo electronico
       const mailOptions = {
         from: 'Maria Fernanda Hermosillo Orenday',
-        to: body.contact,
+        to: "ruvalcabasolisgonzalo@getMaxListeners.com",
         //body.asunto es para poner en el mensaje el asunto que va a mandar el usuario
         subject: `Recibimos tu comentario acerca de: ${body.asunto}`,
         //body.asunto es para poner en el mensaje la descripcion que va a mandar el usuario
