@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "concurrently \"node index.js\" \"node index2.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,5 +19,8 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.9.3",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
   }
 }
