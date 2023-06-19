@@ -6,6 +6,7 @@ const misrutas = require("./routes/rutas");
 //const misrutas = require('./routes/rutas');
 const cors = require('cors');
 //app.use('/', misrutas);
+// const admin = require('firebase-admin');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
@@ -19,17 +20,14 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use("/", misrutas);
 
+// const serviceAccount = require('./credenciales.json'); // Ruta a tu archivo de credenciales descargado desde Firebase
+
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+//   databaseURL: 'https://dbstaymate-default-rtdb.firebaseio.com' // URL de tu proyecto de Firebase
+// });
 
 // Habilitar CORS
-
-connection.connect((err, res) => {
-  if (err) {
-    console.log(err);
-    console.log("Error de conexion con sql");
-    return;
-  }
-  console.log("Conexion exitosa a la base de datos");
-});
 
 app.listen(3000, (err, res) => {
   if (err) {
