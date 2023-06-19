@@ -32,6 +32,7 @@ router.get("/user", [], (req, res) => {
 //en esta ruta lo que se hace es obtener los datos que se mandan desde la web en los que usamos para poder hacer nuestra consulta a firebase
 // si nuestra consulta es correcta firesbae nos proporciona la informacion necesaria que contiene el registro, de esta manera cuando se
 // obtiene informacion se devuelve como respuesta para el usuario, para que de esta manera pueda observar los datos de su cita
+//hola
 router.post("/userQr", [], (req, res) => {
   let body = req.body;
 console.log(body.fullName);
