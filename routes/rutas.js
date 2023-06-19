@@ -118,7 +118,7 @@ router.post(
       //En esta parte se manda el contenido del correo electronico
       const mailOptions = {
         from: 'Maria Fernanda Hermosillo Orenday',
-        to: body.email,
+        to: body.contact,
         //body.asunto es para poner en el mensaje el asunto que va a mandar el usuario
         subject: `Reservacion confirmada a nombre de: ${body.fullName}`,
         //body.asunto es para poner en el mensaje la descripcion que va a mandar el usuario
